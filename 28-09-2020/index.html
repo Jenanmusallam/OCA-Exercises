@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jenan</title>
+        <style>
+            body {
+                background-repeat: no-repeat;
+                background-image: url(/28-09-2020/11.jpg);
+                background-attachment: fixed;
+                ;
+                background-size: cover;
+            }
+
+            table,
+            tr,
+            td {
+                border: 2px solid #f7f7f7;
+                border-radius: 8%;
+                background-color: #8ed8f5;
+                text-align: center;
+                text-shadow: black;
+                padding: 10px;
+            }
+
+            thead,
+            th {
+                background-color: rgb(205, 46, 245);
+                border: 2px solid #111111;
+            }
+
+            #tbecolor {
+                background-color: rgb(250, 111, 141);
+            }
+
+            .senter {
+                margin-left: 25%;
+                padding: 24px;
+            }
+
+            #formInf {
+
+                margin-left: 25%;
+                padding: 24px;
+                color: darkblue;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+            }
+
+            #inp {
+                border-radius: 8%;
+                padding: 3px;
+                margin-left: 10px;
+                border: 2px solid darkmagenta;
+            }
+
+            #sub {
+                border-radius: 10%;
+                padding: 8px;
+                color: rgb(255, 255, 255);
+                margin-left: 100px;
+                height: 40px;
+                width: 130px;
+                background-color: darkmagenta;
+                border: 3px solid rgb(240, 233, 240);
+            }
+        </style>
+
+
+
+    </head>
+
+    <body>
+
+        <h1 style="text-align: center;">Welcome My Website </h1>
+        <!-- section One in HTML  -->
+        <div id="section_html">
+            <h2>HTML Language</h2>
+            <img src="1200px-HTML5_logo_and_wordmark.svg.png" alt="Html Pictior" width="200px" height="200px">
+            <p>
+            <ul>
+                <li>HTML is the standard markup language for Web pages.</li>
+                <li>With HTML you can create your own Website.</li>
+                <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a> is easy to learn - You
+                    will enjoy it!</li>
+            </ul>
+            </p>
+            <br>
+            <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML#:~:text=HTML%20(HyperText%20Markup%20Language)%20is,functionality%2Fbehavior%20(JavaScript)."><img
+                    src="https://blog.udacity.com/wp-content/uploads/2020/06/HTML_Blog-scaled.jpeg" alt="" width="200px"
+                    height="200px"></a>
+            <hr>
+            <br>
+        </div>
+        <!--End  section One  -->
+        <!-- section Two in CSS  -->
+        <div id="section_CSS">
+            <h2>CSS Language </h2>
+            <img src="css.png" alt="CSS Pictior" width="200px" height="200px">
+            <p>
+            <ol>
+                <li>CSS is the language we use to style an HTML document.</li>
+                <li><a href="https://www.w3schools.com/css/default.asp">CSS</a> describes how HTML elements should be
+                    displayed.</li>
+                <li> This tutorial will teach you CSS from basic to advanced.</li>
+            </ol>
+            </p>
+            <br>
+            <a href="https://www.w3.org/Style/CSS/Overview.en.html"><img
+                    src="https://miro.medium.com/max/8000/1*lD9NkPZVOBMX29CccwoEDA.jpeg" alt="" width="200px"
+                    height="200px"></a>
+            <hr>
+            <br>
+        </div>
+        <!-- End section Two   -->
+        <!-- section Three   -->
+        <h3>Language for Website</h3>
+        <ul>
+            <li><a href="#section_html">HTML Language</a></li>
+            <li><a href="#section_CSS">CSS Language</a></li>
+            <li>JavaScript</li>
+            <li>Bake-end
+                <ol>
+                    <li>SQL</li>
+                    <li>PHP</li>
+                    <li>Java</li>
+                    <li>Other</li>
+                </ol>
+            </li>
+        </ul>
+        <!--End section Three   -->
+        <hr>
+        <!-- section Four In Table   -->
+        <div class="senter">
+            <table>
+                <header>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                    </tr>
+                </header>
+                <tr>
+                    <td>1</td>
+                    <!-- Row span   -->
+                    <td rowspan="2" id="tbecolor">Jenan Musallam</td>
+                    <td>jmusallam@hotmail.com</td>
+                    <td>0798658266</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                     <!-- Row span   -->
+                    <td>jenan96@hotmail.com</td>
+                    <td>0788525252</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Ali</td>
+                    <td>ali@hotmail.com</td>
+                    <td>089734737743</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Omar hasan</td>
+                    <td>omar@hotmail.com</td>
+                    <td>07845365643</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Reema ali</td>
+                    <td>Reemaali@hotmail.com</td>
+                    <td>0737467347883</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>alaa hamdan</td>
+                    <!-- colom span   -->
+                    <td colspan="2" id="tbecolor">alaaali@hotmail.com</td>
+                </tr>
+            </table>
+        </div>
+        <!--End section Four In Table   -->
+        <br>
+        <hr>
+        <!-- section Five  In Form   -->
+        <form action="" id="formInf">
+            <h1> Informaition</h1>
+            <label>Name : </label>
+            <input type="text" id='inp'>
+            <br><br>
+            <label>Email : </label>
+            <input type="email" id='inp'><br><br>
+            <label>Your Location : </label>
+            <textarea name="" cols="15" rows="2" id='inp'></textarea>
+            <br><br>
+            <label>Enter Number: </label>
+            <input type="number" id='inp'><br><br>
+            <label>Email : </label>
+            <input type="email" id='inp'><br><br>
+            <label>Birthiday : </label>
+            <input type="date" id='inp'><br><br>
+            <label>Like Color : </label>
+            <input type="radio" name="like" id="">Green
+            <input type="radio" name="like" id="">Blue
+            <input type="radio" name="like" id="">Red
+            <br><br>
+            <label for="">Majer : </label>
+            <select name="majer" id='inp'>
+                <option value="it">IT</option>
+                <option value="engineering">Engineering</option>
+                <option value="social">Social</option>
+                <option value="language">Language</option>
+            </select>
+            <br><br>
+            <label>Where You Visit : </label>
+            <input type="checkbox" name="al" id="">Jordan
+            <input type="checkbox" name="al" id="">Saudi Arabia
+            <input type="checkbox" name="al" id="">Palestine
+            <input type="checkbox" name="al" id="">Syria
+
+            <br><br>
+            <input type="submit" value="Submit" id="sub">
+            <input type="reset" value="Rest" id="sub" style="background-color: rgb(230, 150, 76);">
+        </form>
+        <!-- End section Five In Form   -->
+        <hr>
+    </body>
+
+</html>
