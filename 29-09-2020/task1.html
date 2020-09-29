@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task One</title>
+
+    <style>
+        body {
+            background-image: url(/29-09-2020/bakeground.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h2 {
+            padding-left: 40%;
+        }
+
+        fieldset {
+            background-color: rgb(240, 240, 178);
+            width: 30%;
+
+        }
+
+        form {
+            margin-left: 35%;
+            margin-top: 50px;
+        }
+
+        .centerForm {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .sectCity {
+            padding: 5px;
+            border-radius: 10%;
+        }
+
+        .sub {
+            padding: 10px;
+            margin-left: 14%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Registration Form</h2>
+    <!--Form Body-->
+    <form action="">
+        <!--Personal Details -->
+        <fieldset>
+            <legend>Personal Details</legend>
+            <div class="centerForm">
+                <label>First name </label>
+                <input type="text" name="firstName" id=""><br><br>
+                <label>Last name </label>
+                <input type="text" name="lastName" id=""><br><br>
+                <label>Last name </label>
+                <input type="password" name="password" id=""> <br><br>
+                <label>Gender </label>
+                <input type="radio" name="genger" id="">Male
+                <input type="radio" name="genger" id="">Female
+                <br><br>
+            </div>
+        </fieldset>
+        <!--City -->
+        <fieldset>
+            <legend>City</legend>
+            <div class="centerForm">
+                <label>City </label>
+                <select name="" id="" class="sectCity">
+                    <option value="amman">Amman</option>
+                    <option value="amman">Jarash</option>
+                    <option value="amman">Irbed</option>
+                </select>
+                <br>
+            </div>
+        </fieldset>
+        <br>
+        <button type="submit" class="sub">Subscribe</button>
+    </form>
+    <!--End Form Body-->
+</body>
+
+</html>
