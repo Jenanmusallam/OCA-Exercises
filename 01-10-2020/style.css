@@ -1,0 +1,41 @@
+   * {
+                margin: 10px;
+            }
+
+            body {
+                background-color: rgb(233, 238, 164);
+            }
+
+            .sectionOne {
+                border: 2px solid black;
+                background-color: white;
+                width: 59%;
+                padding: 4px;
+                margin-top: 25px;
+            }
+
+            .ipsum {
+                background-color: rgb(238, 187, 92);
+                font-weight: bold;
+            }
+
+
+
+            .quis {
+                background-color: rgb(246, 250, 15);
+                font-weight: bold;
+            }
+
+            .sectionThree {
+                background-color: white;
+                color: red;
+                border: 2px dashed red;
+                width: 59%;
+                padding: 4px;
+                margin-top: 25px;
+            }
+
+            .porder {
+                border: 2px dashed red;
+                padding: 3px;
+            }
