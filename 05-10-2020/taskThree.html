@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex One</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(238, 238, 176);
+        }
+
+        #countener {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 24rem;
+            margin: 4rem 3rem;
+            position: sticky;
+            left: 35rem;
+
+        }
+
+        .user {
+            background-color: rgb(252, 252, 252);
+            padding: 1rem;
+            flex-basis: 20px;
+
+        }
+
+        #countener :nth-child(1) {
+            border-radius: 30% 30% 0 0;
+        }
+
+        #countener :nth-child(4) {
+            border-radius: 0 0 30% 30%;
+        }
+
+        img {
+            background-color: rgb(153, 153, 153);
+            border-radius: 50% !important;
+            height: 4rem;
+            width: 4rem;
+            display: inline-flex;
+        }
+
+        h3 {
+            display: inline-block;
+            position: relative;
+            bottom: 2rem;
+            left: 1rem;
+        }
+
+        p {
+            display: inline-block;
+            position: relative;
+            bottom: 0.5rem;
+            right: 3rem;
+            color: darkgrey;
+        }
+
+        hr {
+            background-color: rgb(209, 203, 203);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="countener">
+        <div class="user"><img src="User.svg.png" alt="User photo">
+            <h3>User #1</h6>
+                <p>Amman Jordan</p>
+                <hr>
+        </div>
+        <div class="user"><img src="User.svg.png" alt="User photo">
+            <h3>User #2</h6>
+                <p>Amman Jordan</p>
+                <hr>
+        </div>
+        <div class="user"><img src="User.svg.png" alt="User photo">
+            <h3>User #3</h6>
+                <p>Amman Jordan</p>
+                <hr>
+        </div>
+        <div class="user"><img src="User.svg.png" alt="User photo">
+            <h3>User #4</h6>
+                <p>Amman Jordan</p>
+
+        </div>
+    </div>
+</body>
+
+</html>
