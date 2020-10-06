@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Form</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: auto;
+        }
+
+        body {
+            background-color: rgb(210, 222, 247);
+        }
+
+        .container {
+            margin-top: 5rem;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="fN">First Name:</label>
+                <input type="text" class="form-control" name="firstName" id="fN" placeholder="Enter First Neme">
+            </div>
+            <div class="form-group">
+                <label for="lN">Last Name:</label>
+                <input type="text" id="lN" class="form-control" name="lastName" placeholder="Enter Last Neme">
+            </div>
+            <div class="radio">
+                <label> <input type="radio" name="gender"> Male </label>
+                <label> <input type="radio" name="gender"> Female </label>
+            </div>
+            <div class="form-group">
+                <label for="dateOfBirth">Date of birth:</label>
+                <input type="date" id="dOB" class="form-control" name="dateOfBirth" placeholder="mm.dd.yyyy">
+            </div>
+            <button type="submit" class="btn btn-primary"> Add </button>
+        </form>
+    </div>
+</body>
+
+</html>
