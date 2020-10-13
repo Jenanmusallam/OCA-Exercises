@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task Three</title>
+</head>
+
+<body>
+
+    <div class="container" style="margin-right: 3rem;">
+        <h1>Calculate the marks of Student</h1>
+        <div id="calculate" style="background-color: rgb(255, 154, 255);">
+            <label>Student Name :</label>
+            <p id="name"></p>
+            <label>Sum of all subjects marks :</label>
+            <p id="Sum"></p>
+            <label>the average mark</label>
+            <p id="avg"> </p>
+            <label> The result average as follow :</label>
+            <p id="result"> </p>
+            <button type="button" onclick="culcul()"> Calculate</button>
+        </div>
+    </div>
+    <script>
+        function culcul() {
+            var maths = 0, english = 0, arabic = 0
+                , bio = 0
+                , copmuter = 0
+                , religion = 0, avg = 0, sum = 0;
+            const number = 6;
+            name = prompt("Enter Name Student");
+            document.getElementById("name").innerHTML = name;
+            maths = prompt("Enter the math mark of 100", "0");
+            english = prompt("Enter the mark English of 100", "0");
+            arabic = prompt("Enter the mark  Arabic of 100", "0");
+            bio = prompt("Enter the mark  Bio of 100", "0");
+            copmuter = prompt("Enter the mark Copmuter of 100", "0");
+            religion = prompt("Enter the mark Religion of 100", "0");
+
+            sum += parseInt(maths) + parseInt(english) + parseInt(arabic) + parseInt(bio) + parseInt(copmuter) + parseInt(religion);
+            avg = sum / number;
+            document.getElementById("Sum").innerHTML = sum;
+            document.getElementById("avg").innerHTML = avg;
+
+            if (avg >= 50 && avg < 60) { document.getElementById("result").innerHTML = "Pass"; }
+            else if (avg > 60 || avg <= 70) { document.getElementById("result").innerHTML = "average"; }
+            else if (avg > 70 || avg <= 80) { document.getElementById("result").innerHTML = "good"; }
+            else if (avg > 80 || avg <= 90) { document.getElementById("result").innerHTML = "very good"; }
+            else if (avg > 90 || avg <= 100) { document.getElementById("result").innerHTML = "Excellent"; }
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>

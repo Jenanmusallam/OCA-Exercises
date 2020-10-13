@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task One</title>
+</head>
+
+<body>
+    <div style="justify-content: center;">
+        <h3>step 1 :</h3>
+        <button type="button" onclick="integerNumber()"> Large Number </button>
+        <p id="test"></p>
+        <p id="test2"></p>
+        <hr>
+
+
+
+        <h3>step 5 :</h3>
+        <button type="button" onclick="message()"> Large Number </button>
+        <p id="test"></p>
+        <hr>
+
+    </div>
+    <script>
+        /* 1. Write a JavaScript program that accept two integers and
+        * display the larger.Go to the editor */
+        /******* Start Your Code *********/
+
+        // step :1
+        function integerNumber() {
+            var number1, number2;
+            number1 = prompt("Input the First integer");
+            number2 = prompt("Input the Second integer");
+            if (parseInt(number1) > parseInt(number2)) { //Using integer
+                console.log("The Larger of " + number1);
+                document.getElementById("test").innerHTML = "The Larger of " + number1; //solution 1 in larger
+            }
+            else if (parseInt(number1) > parseInt(number2)) {
+                console.log("The Larger of " + number2);
+                document.getElementById("test").innerHTML = "The Larger of " + number2; //solution 1 in larger
+            }
+            document.getElementById("test2").innerHTML = Math.max(number1, number2);  //solution 2 in larger
+        }
+
+        /******* End Your Code ********* */
+
+        /* 2. Write a JavaScript conditional statement to find the sign
+        of product of three numbers. Display an alert box with the
+        specified sign. Go to the editor
+        Sample numbers : 3, -7, 2
+        Output : The sign is - */
+        /******* Start Your Code *********/
+        var a = 3;
+        var b = -7;
+        var c = 2;
+        if (a < 0 && b < 0 && c < 0) {
+            alert("The Sing is  - ");
+        }
+        else if (a >= 0 && b >= 0 && c >= 0) {
+            alert("The Sing is  + ");
+        }
+
+        else { alert("The Sing is - "); }
+
+        /******* End Your Code ********* */
+
+
+        /* 3. Write a JavaScript conditional statement to sort three numbers. Display an alert box to show the result. Go to
+        the
+        editor
+        Sample numbers : 0, -1, 4
+        Output : 4, 0, -1 */
+
+        /******* Start Your Code *********/
+        var num1 = [0, -1, 4];
+        num1.sort();
+        num1.reverse();
+        alert(num1);
+
+        /******* End Your Code ********* */
+
+
+        /*4. Write a JavaScript conditional statement to find the largest of five numbers.
+        Display an alert box to show the result. Go to the editor
+        Sample numbers : -5, -2, -6, 0, -1
+        Output : 0 */
+
+        /******* Start Your Code *********/
+        var num2 = [-5, -2, -6, 0, -1];
+        num2.sort();
+        num2.reverse();
+        console.log(num2[0]);    //The largest of Five
+
+        /******* End Your Code ********* */
+
+
+        /* 5.Write the if statement to display "Hello World" if x is greater than y, otherwise alert "Goodbye".*/
+
+        /******* Start Your Code *********/
+        // step:5
+
+        function message() {
+            var x, y;
+            x = prompt("Enter Number");
+            y = prompt("Enter Number");
+            if (x > y) {
+                alert("Hello World");
+            }
+            else {
+                alert("Goodbye");
+            }
+        }
+
+        /******* End Your Code ********* */
+    </script>
+</body>
+
+</html>
