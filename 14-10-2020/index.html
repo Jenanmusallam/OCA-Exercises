@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Odd & Even</title>
+    <style>
+        div {
+            border: 3px solid brown;
+            border-radius: 30px;
+            background-color: rgb(226, 135, 135);
+            padding: 2rem;
+            font-size: 1.4rem;
+            text-align: center;
+            margin-top: 6rem;
+            color: rgb(245, 245, 245);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        #test {
+            background-color: brown;
+            padding: 1rem;
+            color: white;
+            font-size: 1rem;
+            border-radius: 20px;
+            border: 2px solid brown;
+            box-shadow: cornsilk 4px 4px 4px;
+        }
+
+        #test:hover {
+            background-color: rgb(255, 255, 255);
+            color: brown;
+            transform: scale(1.2);
+            font-weight: bold;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p id="array"></p>
+        <button id="test" onclick="sum()">Sum Odd And Even </button>
+        <p id="odd"></p>
+        <p id="even"></p>
+    </div>
+    <script>
+        var arr = [];
+        for (var i = 0; i < 11; i++) {
+            arr.push(i);
+        }
+        document.getElementById("array").innerHTML = "Array is = [ " + arr + " ];";
+        function sum() {
+            var sumEven = 0;
+            var sumOdd = 0;
+            for (var x = 0; x < 11; ++x) {
+                arr.push(x);
+                if (x % 2 == 0) {
+                    sumOdd += arr[x];
+                }
+                else {
+                    sumEven += arr[x];
+                }
+            }
+            document.getElementById("odd").innerHTML = "Sum Odd Number = " + sumOdd;
+            document.getElementById("even").innerHTML = "Sum Even Number = " + sumEven;
+        }
+
+    </script>
+</body>
+
+</html>
