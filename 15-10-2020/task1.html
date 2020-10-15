@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task 1</title>
+    </head>
+
+    <body>
+        <script>
+            // Create a function called oddArray
+            // that accept an array
+            // and return an array have only the odd elemnts
+
+            // var nums= [1,2,3,8,9]
+            // Ex: oddArray(nums) => [1,3,9]
+
+            // ** solve it one time using for loop and another using while loop
+            // **try more cases by your self
+
+
+            /******* Start Your Code *********/
+            var nums = [1, 2, 3, 8, 9];
+            var array = [];
+            function oddArray(nums) {
+                var x = 0;
+                while (x < 5) {  //solution 1
+                    if (nums[x] % 2 != 0) {
+                        array.push(nums[x]);
+                    }
+                    x++;
+                }
+                console.log(array);
+                // for (var x = 0; x < nums.length; x++) { //solution 2 
+                //     if (nums[x] % 2 != 0) {
+                //         array.push(nums[x]);
+                //     }
+                // console.log(array);
+                // } 
+            }
+            oddArray(nums);
+
+
+
+
+            /******* End Your Code ********* */
+
+        </script>
+    </body>
+
+</html>
