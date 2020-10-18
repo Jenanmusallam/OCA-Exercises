@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .contener {
+            background-color: rgb(88, 87, 87);
+            width: 100vw;
+            margin: 0;
+            padding: 2rem;
+            height: 100vh;
+        }
+
+        #tellFor {
+
+            color: rgb(31, 168, 157);
+            font-weight: bold;
+            text-align: center;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contener">
+        <p id="tellFor"></p>
+    </div>
+
+    <script>
+        function tellFortune(x, y, z, n) {
+            document.getElementById("tellFor").innerHTML = "You will be a " + x + " in " + y + "  and married to " + z + " with " + n + " Kids.";
+        }
+        var jobTitle = prompt("Enter Job title.");
+        var geoLocation = prompt("Enter Geographic location");
+        var partnerName = prompt("Enter Partner's name");
+        var numberChildren = prompt("Enter Number Of Children");
+        tellFortune(jobTitle, geoLocation, partnerName, numberChildren);
+
+
+
+    </script>
+</body>
+
+</html>
