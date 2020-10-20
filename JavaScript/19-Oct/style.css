@@ -1,0 +1,62 @@
+        * {
+                box-sizing: border-box;
+            }
+
+            .contact {
+                padding: 2rem;
+                margin: 2rem;
+            }
+
+            form {
+                background-color: rgb(90, 89, 89);
+                color: white;
+                text-align: center;
+                padding: 1rem;
+                width: 39vw;
+                margin-left: 20rem;
+                border-radius: 20px;
+
+            }
+
+            input,
+            #create {
+                margin: 0.3rem;
+                width: 20rem;
+                height: 1.9rem;
+                border-radius: 20px;
+                padding-left: 1rem;
+            }
+
+            #checkbox {
+                width: 2rem;
+                height: 1rem;
+            }
+
+            #create {
+                padding: 2rem;
+                margin: 2rem;
+                height: 1rem;
+                width: 15rem;
+                background-color: yellowgreen;
+                color: white;
+                font-size: 1rem;
+                font-weight: bold;
+
+            }
+
+            .fas,
+            a {
+                color: yellowgreen;
+            }
+
+            .btn:hover {
+                opacity: 1;
+                box-shadow: rgb(88, 77, 77) 2px 2px 2px;
+            }
+
+            @media (max-width: 800px) {
+                form {
+                    width: 80vw;
+                    margin-left: 0rem;
+                }
+            }

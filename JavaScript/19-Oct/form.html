@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Using Icon Laibrary(font awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous" />
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="contact">
+        <form onsubmit=" return user()" name="myform">
+            <h1>Create an Account</h1>
+            <hr>
+            <i class="fas fa-user"></i> <input type="text" id="name" placeholder="Name">
+            <br>
+            <i class="fas fa-phone"></i> <input type="text" id="phone" placeholder="phone Number">
+            <br>
+            <i class="fas fa-envelope-square"></i> <input type="text" name="" id="email" placeholder="Email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <br>
+            <i class="fas fa-lock"></i> <input type="password" id="pass" placeholder="Password">
+            <br>
+            <input type="checkbox" name="" id="checkbox" onclick="Show()"> I agree to the <a href="">Terms and
+                Condition </a> and <a href="">privacy Policy</a>
+            <br>
+            <button id="create" class="btn" type="submit">Create Account</button>
+
+        </form>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>

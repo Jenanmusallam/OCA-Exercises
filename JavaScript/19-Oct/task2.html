@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        class person {
+            #message  //private
+            constructor(name, age, gender, msg) {
+                this.name = name;
+                this.age = age - 2020;
+                this.gender = gender;
+                person.count = person.count || 0; //abstraction
+                person.count++;
+                this.#message = msg; //private
+
+            }
+            getName() {
+                console.log(`Hi I'm ${this.name}`);
+            }
+            getName(name) { //overloading
+                console.log(`Hi I'm ${name}`);
+            }
+
+        }
+        class teacher extends person {//Inheritance in person
+            constructor(name, age, gender, subject, grade) {
+                super(name, age, gender);
+                this.subject = subject;
+                this.grade = grade;
+            }
+            getName() { // Override 
+                console.log("Welcome word techer");
+            }
+
+        }
+        class car {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+            getCar() {
+                console.log(`My Car is ${this.name}`)
+            }
+
+        }
+        class animal {
+            constructor(name, eat) {
+                this.name = name;
+                this.eat = eat;
+            }
+            getAnimal() {
+                console.log(`The Animal eat ${this.eat}`);
+            }
+        }
+        let personOne = new person("ahmad", 23, 'male', "single");
+        let personTwo = new person("hala", 26, 'Female', "single");
+        console.log(personOne);
+        personOne.getName();
+
+        console.log(personTwo);
+        personOne.getName("salam");//overloading
+
+        let rana = new teacher("Rana", "25", "female", "MIS", 5); //Inheritance
+        rana.getName();// Override 
+        console.log(rana);
+
+        console.log(person.count);//abstraction
+
+        let carOne = new car("BMW", 2010);
+        let carTwo = new car("marsedes", 2006);
+        console.log(carOne);
+        console.log(carTwo);
+        carOne.getCar();
+
+        let animalOne = new animal("Cat", "tona");
+        let animalTwo = new animal("horse", "Herbs");
+        console.log(animalOne);
+        console.log(animalTwo);
+        animalTwo.getAnimal();
+
+        const all = (x, y) => "Multiplication Two Number " + (x * y); // Using ES6 Arrow Function
+        console.log(all(12, 5));
+
+
+    </script>
+
+</body>
+
+</html>
