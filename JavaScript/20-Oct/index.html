@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        class Person {
+            constructor(id, name, age) {
+                this.id = id;
+                this.name = name;
+                this.age = age;
+                Person.count = Person.count || 0; //abstraction
+                Person.count++;
+            }
+            Greeting() {
+                console.log("Welcome " + this.name);
+            }
+        }
+        class Techer extends Person { //Inheritance in person
+            constructor(id, name, age, subject) {
+                super(id, name, age)
+                this.subject = subject;
+            }
+        }
+        class Car {
+            constructor(id, type, year) {
+                this.id = id;
+                this.type = type;
+                this.year = year;
+            }
+            start() {
+                console.log("The car is running");
+            }
+
+        }
+        class Animal {
+            constructor(id, name, isPet) {
+                this.id = id;
+                this.name = name;
+
+            }
+            homeAnimal() {
+                console.log(this.isPet = true);//Boolean
+            }
+        }
+
+        let person1 = new Person(1, "Jenan", 24);
+        let person2 = new Person(2, "Reema", 42);
+        let car1 = new Car(1, "BMW", 2018);
+        let car2 = new Car(2, "chevy ", 2020);
+        let animal1 = new Animal(1, "Cat", false);
+        let animal2 = new Animal(2, "panda ", true);
+        let techer1 = new Techer(3, "Sobhi", 30, "math");
+        techer1.Greeting();
+        animal1.homeAnimal();
+        animal2.homeAnimal();
+
+
+        sum = (x, y) => x + y; // arrow function
+        console.log(sum(3, 2));
+    </script>
+</body>
+
+</html>
