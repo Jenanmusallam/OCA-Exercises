@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: auto;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .contener {
+            background-color: rgb(147, 247, 247);
+            margin: 6rem;
+            font-size: 1.5rem;
+        }
+
+        .inputStyle {
+            width: 10rem;
+            height: 3rem;
+            border-radius: 20px;
+            box-shadow: teal 3px 3px 3px;
+            margin: 2rem;
+
+        }
+
+        form {
+            width: 50vw;
+            height: 50vh;
+            background-color: teal;
+            padding: 1rem;
+            border-radius: 20px;
+            box-shadow: wheat 3px 3px 3px;
+
+        }
+
+        .btn {
+            width: 8rem;
+            height: 2rem;
+            border-radius: 12px;
+            box-shadow: turquoise 2px 2px 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contener">
+        <h2>Local Submit and Session Submit</h2>
+        <form action="" name="myform" onclick="storge()">
+            <input type="text" id="input1" class="inputStyle" placeholder="Name Key">
+            <input type="text" id="input2" class="inputStyle" placeholder="Name Value">
+            <br>
+
+            <button class="btn" onclick="localSubmit()"> Local Submit</button>
+            <button class="btn" onclick="sessionSubmit()"> Session Submit</button>
+            <button class="btn" onclick="clearStorge()"> Clear </button>
+        </form>
+
+    </div>
+
+
+
+
+    <script>
+        storge = () => {
+            var key = document.getElementById("input1").value;
+            var val = document.getElementById("input2").value;
+
+
+
+            localSubmit = () => {
+                var key = document.getElementById("input1").value;
+                var val = document.getElementById("input2").value;
+                localStorage.setItem(key, val); //add
+                alert(localStorage.getItem(key));
+            }
+            sessionSubmit = () => {
+                var key = document.getElementById("input1").value;
+                var val = document.getElementById("input2").value;
+                sessionStorage.setItem(key, val); // add key and vale
+                alert(sessionStorage.getItem(key));
+            }
+            clearStorge = () => {
+
+                localStorage.clear();
+                sessionStorage.clear();
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-var regexName = new RegExp(/([^\s])$/);
+var regexName = new RegExp(/(\b[a-z](?!\s))/g);
 var regexPhone = new RegExp(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im);
 var regexEmail = new RegExp(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
 var regexPassword = new RegExp(/^[A-Za-z]\w{7,14}$/);
