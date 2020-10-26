@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+        <title>shapes</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: auto;
+                background-color: rgb(252, 222, 252);
+            }
+
+            .cotent {
+                height: 100vh;
+                width: 100vw;
+                margin: 0;
+
+            }
+
+            #btnShowAndHide {
+                margin: 1rem;
+                margin-left: 11rem;
+            }
+
+            #btnShowAndHide:active {
+                background-color: #3e8e41;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+
+            .shapes {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                height: 95vh;
+                width: 100vw;
+
+            }
+
+            .shapesOne,
+            .shapesTow {
+                height: 90vh;
+                width: 50vw;
+                padding-top: 9rem;
+            }
+
+
+            /* Shape One */
+            .shapesOne {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                padding: 13rem;
+                padding-left: 7rem;
+                background-color: rgb(99, 11, 121);
+
+            }
+
+            .box {
+                height: 10rem;
+                width: 10rem;
+                background-color: rgb(99, 11, 121);
+            }
+
+            .upColor {
+                background-color: rgb(233, 233, 133);
+                border-radius: 47% / 81% 81% 0 0;
+            }
+
+            .downcolor {
+                background-color: rgb(233, 233, 133);
+                border-radius: 47% / 0 0 81% 81%;
+            }
+
+            /* shapesTow */
+            .shapesTow {
+                background-color: rgb(121, 184, 226)
+            }
+
+            #rectangle {
+                width: 37vw;
+                height: 42vh;
+                background: rgb(20, 50, 116);
+
+            }
+
+            #circleLarg {
+                width: 26rem;
+                height: 20rem;
+                background: rgb(121, 184, 226);
+                border-radius: 43%;
+                padding-top: 1rem;
+            }
+
+            #circleMedum {
+                width: 18rem;
+                height: 18rem;
+                background: rgb(20, 50, 116);
+                border-radius: 50%;
+                padding-top: 6.2rem;
+            }
+
+            #circleSm {
+                width: 5rem;
+                height: 5rem;
+                background: rgb(221, 207, 5);
+                border-radius: 50%
+            }
+
+            #show {
+                display: none;
+            }
+
+            /* shapesTow */
+            @media(max-width:1300px) {
+                .shapes {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
+                .shapesOne,
+                .shapesTow {
+                    height: 50vh;
+                    width: 30rem;
+                }
+
+                .shapesOne {
+                    padding: 2rem;
+                    padding-left: 4rem;
+                    padding-right: 5rem;
+                    width: 30rem;
+                }
+
+                .shapesTow {
+                    padding: 2rem;
+                }
+
+                #rectangle {
+                    width: 49vw;
+                    height: 43vh;
+
+
+                }
+
+                .box {
+                    width: 8rem;
+                }
+
+                #circleLarg {
+                    width: 21rem;
+                    height: 20rem;
+                    border-radius: 38%;
+                    padding-top: 3rem;
+                }
+
+                #circleMedum {
+                    width: 14rem;
+                    height: 14rem;
+                    padding-top: 4.2rem;
+                }
+
+                #circleSm {
+                    width: 4rem;
+                    height: 4rem;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="content">
+            <button id="btnShowAndHide" type="button" class="show btn btn-primary">Show</button>
+            <button id="btnShowAndHide" type="button" class="hide btn btn-primary">
+                Hide</button>
+
+            <div id="elem" class="animated animate__animated animate__flipInX " hidden>
+                <div class="shapes" id="shapes">
+                    <div class="shapesOne">
+                        <div class="box"></div>
+                        <div class=" box upColor"></div>
+                        <div class=" box"></div>
+                        <div class="box downcolor"></div>
+                        <div class="box"></div>
+                        <div class=" box downcolor"></div>
+                    </div>
+                    <div class="shapesTow">
+                        <div id="rectangle">
+                            <div id="circleLarg">
+                                <div id="circleMedum">
+                                    <div id="circleSm">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            var elem = document.querySelector('#elem');
+            document.addEventListener('click', function (event) {
+
+                if (event.target.matches('.show')) {
+                    elem.removeAttribute('hidden');
+                    elem.classList.add('fadeInDown');
+
+                }
+
+                if (event.target.matches('.hide')) {
+                    elem.setAttribute('hidden', 'true');
+                    elem.classList.remove('fadeInDown');
+                }
+
+            }, false);
+
+        </script>
+    </body>
+
+</html>
