@@ -1,0 +1,163 @@
+
+        * {
+            box-sizing: border-box;
+            margin: auto;
+            background-color: rgb(80, 80, 80);
+        }
+
+        .cotent {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+
+        }
+
+        #btnShowAndHide {
+      margin: 3rem 1rem 1rem 21rem;
+        }
+
+        #btnShowAndHide:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        .shapes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            height: 95vh;
+            width: 99vw;
+
+        }
+
+        .shapesOne,
+        .shapesTow {
+            height: 90vh;
+            width: 49vw;
+            padding-top: 9rem;
+        }
+
+
+        /* Shape One */
+        .shapesOne {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 14rem;
+            padding-left: 13rem;
+            background-color: rgb(99, 11, 121);
+
+        }
+
+        .box {
+            height: 10rem;
+            width: 10rem;
+            background-color: rgb(99, 11, 121);
+        }
+
+        .upColor {
+            background-color: rgb(233, 233, 133);
+            border-radius: 47% / 81% 81% 0 0;
+        }
+
+        .downcolor {
+            background-color: rgb(233, 233, 133);
+            border-radius: 47% / 0 0 81% 81%;
+        }
+
+        /* shapesTow */
+        .shapesTow {
+            background-color: rgb(121, 184, 226);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 0rem 11rem;
+        }
+
+        #circleMedum {
+            width: 13rem;
+            height: 13rem;
+            background: #110677;
+            border-radius: 50%;
+            padding-top: 4.2rem;
+        }
+
+        #circleSm {
+            width: 4rem;
+            height: 4rem;
+            background: rgb(221, 207, 5);
+            border-radius: 50%
+        }
+
+        #show {
+            display: none;
+        }
+
+        /* test */
+        #concaveOne {
+            width: 8rem;
+            height: 13rem;
+            background: radial-gradient(circle 3rem at 170% 50%, transparent, transparent 9rem, #110677 7rem);
+            background-size: 6rem 13rem, 12rem;
+            background-position: 0 0, 100% 0;
+            background-repeat: no-repeat;
+        }
+
+        #concaveTwo {
+            width: 8rem;
+            height: 13rem;
+            background: radial-gradient(circle 6rem at -66% 50%, transparent, transparent 10rem, #110677 9rem);
+            background-size: 7rem 12rem, 5rem;
+            background-position: 0 0, 100% 0;
+            background-repeat: no-repeat;
+        }
+
+        /* shapesTow */
+        @media(max-width:1300px) {
+            .shapes {
+                grid-template-columns: repeat(1, 1fr);
+                width: 95vw;
+            }
+
+            .shapesOne,
+            .shapesTow {
+                height: 70vh;
+                width: 38rem;
+            }
+
+            .shapesOne {
+                padding: 5rem 7rem;
+            }
+
+            .shapesTow {
+                padding: 2rem;
+            }
+
+            #rectangle {
+                width: 49vw;
+                height: 43vh;
+
+
+            }
+
+            .box {
+                width: 8rem;
+            }
+
+            #circleLarg {
+                width: 21rem;
+                height: 20rem;
+                border-radius: 38%;
+                padding-top: 3rem;
+            }
+
+            #circleMedum {
+                width: 14rem;
+                height: 14rem;
+                padding-top: 4.2rem;
+            }
+
+            #circleSm {
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+ 

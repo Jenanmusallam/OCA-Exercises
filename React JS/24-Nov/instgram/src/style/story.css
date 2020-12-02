@@ -1,0 +1,32 @@
+.row{
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+     border: #eaeaea 2px solid;
+
+}
+.section-story{
+      display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: #262626;
+       padding: 1rem;
+         border: #eaeaea 2px solid;
+}
+.section-story .row{
+    padding: 0;
+    border: 0;
+}
+.user-img{
+width: 6rem;
+height: 6rem;
+    border-radius: 50%;
+    border: #b7119f 4px solid;
+}
+.blake{
+     border: #5a5a5a 4px solid;
+}
+.name-user{
+    font-size: 1rem;
+}
+

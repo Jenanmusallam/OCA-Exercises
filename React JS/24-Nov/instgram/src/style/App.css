@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.App{
+    text-align: center;
+    border: #eaeaea 3px solid;
+}
+/* NavBar  */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: rgb(255, 255, 255);
+    color: #262626;
+    padding: 1rem;
+       /* border: #eaeaea 3px solid; */
+}
+.logoInstgram{
+    width: 10rem;
+    height: 3rem;
+    margin-right: 15rem;
+}
+.logoUser{
+width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+.search{
+background-color: #fafafa;
+    color: #d1d0d0;
+    width: 22rem;
+    height: 3rem;
+    padding-top: 0.3rem;
+    border-radius: 6px ;
+    border: #eaeaea 2px solid;
+}
+.fas , .far{
+    font-size: 2rem;
+}
+.search .fas{
+    font-size: 1rem;
+    padding-top: 0.5rem;
+}
+.nav-links{
+    width: 40%;
+    display: flex;
+        justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+
+/* Home */
+.Home{
+  background-color: #fafafa;
+  height: auto;
+  border: #eaeaea 2px solid;
+}
+.space{
+    height: 3rem;
+}
+
+/* ------- Media ------ */
+@media(max-width:1826px){
+    .logoInstgram{
+
+    margin-right: 3rem;
+    }
+.nav-links{
+    width: 36%;
+}
+.search{
+    display: none;
+}
+.section-icon svg {
+   
+    left: 18rem;
+
+}
+.firstPost .fas {
+    left: 9rem;
+}
+}
+@media(max-width:768px){
+.firstPost .fas {
+    left: 9rem;
+}
+.section-icon svg {
+   
+    left: 18rem;
+
+}
+
+}
+

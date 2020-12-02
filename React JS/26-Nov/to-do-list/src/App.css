@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: rgb(0, 92, 121);
+  color: aliceblue;
+}
+.nav-links{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+} 
+
+.background-imgHome{
+    background-image: url(https://eskipaper.com/images/background-pictures-16.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+  padding: 4rem;
+    font-size: 3rem;
+    color: steelblue;
+    text-shadow: 4px 3px 4px rgb(199, 213, 252);
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+.item{
+margin: 0.5rem;
+    padding: 4rem;
+}
+
+.imgGallery{
+   width: 18vw;
+    height: 66vh;
+    border-radius: 6%;
+    box-shadow: 8px 7px 10px azure;
+    border: 2px solid white;
+    margin: 2rem;
+
+}
+.imgGallery:hover{
+  transform: scale3d(1.5, 1.5, 1.5);
+}
+.videoYoutube{
+box-shadow: 8px 7px 10px azure;
+    width: 65vw;
+    height: 86vh;
+    border-radius: 3%;
+
+}
+
+/* Media */
+/* @media(max-width:1060px){
+.videoYoutube{
+    width: 45rem;
+    height: 20rem;
+}
+}
+}
+@media(max-width:513px){
+.videoYoutube{
+    width: 20rem;
+    height: 15rem;
+}
+} */
+/* Media */
+@media(max-width:834px){
+.imgGallery{
+    width: 30vw;
+}
+}
